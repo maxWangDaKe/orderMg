@@ -1,0 +1,30 @@
+环境准备：
+1：安装python
+2：查看python是否安装完成
+	python --version
+3：安装第三方库
+	pip3 install BeautifulSoup4
+	pip3 install lxml
+	pip3 install xlwt
+	pip3 install xlrd
+
+创建文件操作目录
+D:\orderMg
+放入文件
+readFile.py
+
+
+1：在订单管理中打开已完成的数据
+2：在页面最下面选择每次查询100条数据
+3：F12打开开发者模式
+4：把页面展示订单数据中的眼睛一个一个打开
+5：你需要的数据全部打开眼睛后，找到第一条数据，按F12(开发者模式),鼠标选中第一条订单号码，浏览器会在开发者模式中定位到<tbody>代码块
+6：收缩<tbody>代码块后，然后鼠标右键选择copy->copy outHTML
+7: 把拷贝到的内容存放到D:\orderMg\order.html文件中，文件的编码格式为UTF-8
+8：运行程序，
+	进入到D:\\orderMg
+	在地址栏输入cmd
+	在CMD中输入 py readFile.py
+	自动生成EXCEL文件在D:\orderMg\order.xls
+
+
